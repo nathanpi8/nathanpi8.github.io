@@ -1,0 +1,26 @@
+# Site settings — edit these
+title: Nathan Paul
+description: Placeholder tagline — one line about what you write about.
+url: "https://USERNAME.github.io"   # replace USERNAME with your GitHub username
+baseurl: ""                          # leave empty for USERNAME.github.io; set to "/repo-name" for a project site
+
+# Author / links shown on the homepage
+author:
+  name: Nathan Paul
+  email: nathanindumon@gmail.com
+twitter_username: yourhandle
+github_username: yourusername
+
+# Build settings (GitHub Pages native)
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:title/
+
+kramdown:
+  syntax_highlighter: rouge
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<header>
+  <h1>{{ site.author.name }}</h1>
+  <p class="tagline">{{ site.description }}</p>
+  <p class="links">
+    <a href="https://twitter.com/{{ site.twitter_username }}">twitter</a> &middot;
+    <a href="https://github.com/{{ site.github_username }}">github</a> &middot;
+    <a href="mailto:{{ site.author.email }}">email</a>
+  </p>
+</header>
+
+<section class="posts">
+  {% for post in site.posts %}
+  <div class="post-item">
+    <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <a class="post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    {% if post.description %}<p class="post-desc">{{ post.description }}</p>{% endif %}
+  </div>
+  {% endfor %}
+</section>
