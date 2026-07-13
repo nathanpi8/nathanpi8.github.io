@@ -1,7 +1,7 @@
 # Site settings
 title: Nathan's Blog
 email:
-description: "Computers and what not"
+description: "Computers and what not."
 baseurl: ""
 url: "https://nathanpi8.github.io"
 github_username: nathanpi8
